@@ -13,13 +13,13 @@ def help():
     print('Author: Shenghua Wan @ Louisiana State University')
     print("Contact: wanshenghua 'at' gmail 'dot' com")
     print()
-    print('Format: tetmesh_converter.py name.tet')
+    print('Format: tetmesh_converter.py name.tet > name.tm')
 
 #main function    
 file_name = ''
 if len(sys.argv) != 2 :
     help()
-    sys.exit(0)
+    sys.exit(-1)
 else :
     file_name = sys.argv[1]
 
